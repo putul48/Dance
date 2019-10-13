@@ -16,6 +16,10 @@ firebase.auth().onAuthStateChanged(function(user) {
     document.getElementById("logout_button").style.display = "block";
     document.getElementById("login_button").style.display = "none";
 
+    document.getElementById("phonenumber").style.display = "none";
+    document.getElementById("contactus").style.display = "block";
+
+
     var user = firebase.auth().currentUser;
 
     window.alert("Welcome");
@@ -32,6 +36,9 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     document.getElementById("logout_button").style.display = "none";
     document.getElementById("login_button").style.display = "block";
+
+    document.getElementById("contactus").style.display = "none";
+    document.getElementById("phonenumber").style.display = "block";
 
   }
 });
