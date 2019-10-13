@@ -8,10 +8,11 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>grayscale</title>
+  <title>danceputul48</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -44,19 +45,19 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="login_button">
             <a class="nav-link js-scroll-trigger" href="login.html">login</a>
+          </li>
+          <li class="nav-item" id="logout_button" style="display:none">
+            <a class="nav-link js-scroll-trigger" href="login.html" onclick="logout()">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="register.html">Register</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <form class="form-inline" action="/action_page.php">
-    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-    <button class="btn btn-success" type="submit">Search</button>
-  </form>
-</nav>
 
 
 
@@ -77,9 +78,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-          <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+          <h2 class="text-white mb-4">Dance to explore the freedom</h2>
+          <p class="text-white-50">This webpage will help you to know about some different dnace forms and will help to choose your ows dance style.</p>
         </div>
       </div>
       <div id="demo" class="carousel slide" data-ride="carousel">
@@ -127,8 +127,8 @@
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+            <h4>Dance Categories</h4>
+            <p class="text-black-50 mb-0">Dance is a vast field of human expression and it has many categories.Most popular dance form of our country is classical.But nowadays hip-hop and freestyle dances are introdused and famous too.</p>
           </div>
         </div>
       </div>
@@ -142,8 +142,9 @@
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Misty</h4>
-                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                <h4 class="text-white">Classical</h4>
+                <p class="mb-0 text-white-50">The Sangeet Natak Akademi recognizes eight – Bharatanatyam, Kathak, Kuchipudi, Odissi, Kathakali, Sattriya, Manipuri and Mohiniyattam. Scholars such as Drid Williams add Chhau, Yakshagana and Bhagavata Mela to the list.
+.</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
@@ -160,8 +161,8 @@
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Mountains</h4>
-                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                <h4 class="text-white">Freestyle</h4>
+                <p class="mb-0 text-white-50">Freestyle dance, or dance improvisation, is the when you spontaneously make movement with your body. This means you're not following choreography; just moving. Since freestyle dancing is about your own original voice, there is no wrong way to do it.</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -171,7 +172,7 @@
 
     </div>
 
-  </section>
+  /*</section>
 
   <!-- Signup Section -->
   <section id="signup" class="signup-section">
@@ -180,12 +181,9 @@
         <div class="col-md-10 col-lg-8 mx-auto text-center">
 
           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+          <h2 class="text-white mb-5">Contact us to get any help.</h2>
 
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-          </form>
+
 
         </div>
       </div>
@@ -204,7 +202,7 @@
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Address</h4>
               <hr class="my-4">
-              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+              <div class="small text-black-50">Mirpur-Dhaka,Bangladesh</div>
             </div>
           </div>
         </div>
@@ -216,23 +214,34 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">hello@yourdomain.com</a>
+                <a href="#">asima.oshin1998@gmail.com</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4 mb-3 mb-md-0">
+        <div class="col-md-4 mb-3 mb-md-0" id="phonenumber">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
               <i class="fas fa-mobile-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Phone</h4>
               <hr class="my-4">
-              <div class="small text-black-50">+1 (555) 902-8832</div>
+              <div class="small text-black-50">01199010080</div>
             </div>
           </div>
         </div>
+
+      <div class="col-md-4 mb-3 mb-md-0" style="display:none" id="contactus">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Contact Us</h4>
+            <hr class="my-4">
+            <div class="small text-black-50"><a href="contact.html"> Click here...</a></div>
+          </div>
+        </div>
       </div>
+    </div>
 
       <div class="social d-flex justify-content-center">
         <a href="#" class="mx-2">
@@ -265,6 +274,12 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+
+
+  <script src="js/index.js"></script>
 
 </body>
 
