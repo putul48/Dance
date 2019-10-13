@@ -27,7 +27,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     if(user != null){
 
       var email_id = user.email;
-      document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
+      //document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
 
     }
 
@@ -44,6 +44,8 @@ firebase.auth().onAuthStateChanged(function(user) {
 });
 
 function logout(){
-  firebase.auth().signOut();
-  document.location.href="./index.html";
+  firebase.auth().signOut().then(x=>{
+    document.location.href="./index.html";
+  });
+
 }

@@ -16,7 +16,9 @@ document.getElementById('submit').addEventListener('click',e=>{
     phone:phone,
     message:message
   });
-  document.getElementById('contactForm').reset();
+  //document.getElementById('contactForm').reset();
+  console.log('sent');
+  document.location.href="./index.html";
 });
 
 
@@ -52,7 +54,6 @@ function errEmailsData(err) {
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
-    console.log(user);
     if(user.email=='admin@putul.com'){
       console.log('admin');
       document.getElementById('submission-form').style.display='none';
